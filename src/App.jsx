@@ -284,9 +284,12 @@ function Contact() {
         title="Start a conversation about your child’s future"
         text="Online and in-person consultations are available for families, students, and schools."
       />
+
       <section className="container contact-grid section-tight">
+
         <Card className="contact-card">
           <h2>Contact Details</h2>
+
           <div className="contact-details">
             <p><Mail /> hello@bridgingdreamsconsulting.com</p>
             <p><Phone /> +1 (555) 123-4567</p>
@@ -296,14 +299,32 @@ function Contact() {
 
         <Card className="contact-card">
           <h2>Request a Consultation</h2>
-          <div className="form">
-            <input placeholder="Full name" />
-            <input placeholder="Email address" />
-            <input placeholder="Student age / grade" />
-            <textarea placeholder="Tell us what support you are looking for" />
-            <Button>Send Request</Button>
-          </div>
+
+          <form
+            action="https://formspree.io/f/meedzljy"
+            class="fs-form"
+            target="_top"
+            method="POST"
+            >
+            <div class="fs-field">
+              <label class="fs-label" for="name">Name</label>
+              <input class="fs-input" id="name" name="name" />
+            </div>
+            <div class="fs-field">
+              <label class="fs-label" for="email">Email</label>
+              <input class="fs-input" id="email" name="email" required />
+            </div>
+            <div class="fs-field">
+              <label class="fs-label" for="message">Message</label>
+              <textarea class="fs-textarea" id="message" name="message"></textarea>
+              <p class="fs-description">We usually respond within 1-2 business days.</p>
+            </div>
+            <div class="fs-button-group">
+              <button class="fs-button" type="submit">Send</button>
+            </div>
+          </form>
         </Card>
+
       </section>
     </main>
   );
