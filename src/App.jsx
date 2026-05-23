@@ -300,29 +300,41 @@ function Contact() {
         <Card className="contact-card">
           <h2>Request a Consultation</h2>
 
-          <form
-            action="https://formspree.io/f/meedzljy"
-            class="fs-form"
-            target="_top"
-            method="POST"
-            >
-            <div class="fs-field">
-              <label class="fs-label" for="name">Name</label>
-              <input class="fs-input" id="name" name="name" />
-            </div>
-            <div class="fs-field">
-              <label class="fs-label" for="email">Email</label>
-              <input class="fs-input" id="email" name="email" required />
-            </div>
-            <div class="fs-field">
-              <label class="fs-label" for="message">Message</label>
-              <textarea class="fs-textarea" id="message" name="message"></textarea>
-              <p class="fs-description">We usually respond within 1-2 business days.</p>
-            </div>
-            <div class="fs-button-group">
-              <button class="fs-button" type="submit">Send</button>
-            </div>
-          </form>
+         <form
+          action="https://formspree.io/f/meedzljy"
+          method="POST"
+          className="form"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Full name"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
+
+          <input
+            type="text"
+            name="student"
+            placeholder="Student age / grade"
+          />
+
+          <textarea
+            name="message"
+            placeholder="Tell us what support you are looking for"
+            required
+          />
+
+          <button type="submit" className="btn btn-solid">
+            Send Request
+          </button>
+        </form>
         </Card>
 
       </section>
