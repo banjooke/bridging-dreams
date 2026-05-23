@@ -284,26 +284,75 @@ function Contact() {
         title="Start a conversation about your child’s future"
         text="Online and in-person consultations are available for families, students, and schools."
       />
+
       <section className="container contact-grid section-tight">
+
         <Card className="contact-card">
           <h2>Contact Details</h2>
+
           <div className="contact-details">
-            <p><Mail /> hello@bridgingdreamsconsulting.com</p>
-            <p><Phone /> +1 (555) 123-4567</p>
-            <p><MapPin /> Online & in-person consultations</p>
+            <p>
+              <Mail />
+              hello@bridgingdreamsconsulting.com
+            </p>
+
+            <p>
+              <Phone />
+              +1 (555) 123-4567
+            </p>
+
+            <p>
+              <MapPin />
+              Online & in-person consultations
+            </p>
           </div>
         </Card>
 
         <Card className="contact-card">
           <h2>Request a Consultation</h2>
-          <div className="form">
-            <input placeholder="Full name" />
-            <input placeholder="Email address" />
-            <input placeholder="Student age / grade" />
-            <textarea placeholder="Tell us what support you are looking for" />
-            <Button>Send Request</Button>
-          </div>
+
+          <form
+            action="https://formspree.io/f/{form_id}"
+            method="POST"
+            className="form"
+          >
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Full name"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+            />
+
+            <input
+              type="text"
+              name="student"
+              placeholder="Student age / grade"
+            />
+
+            <textarea
+              name="message"
+              placeholder="Tell us what support you are looking for"
+              required
+            />
+
+            <button
+              type="submit"
+              className="btn btn-solid"
+            >
+              Send Request
+            </button>
+
+          </form>
         </Card>
+
       </section>
     </main>
   );
