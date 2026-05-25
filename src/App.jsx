@@ -230,7 +230,7 @@ function About() {
           <p className="eyebrow amber">Our Approach</p>
           <h2>Rooted in care, expertise, and possibility.</h2>
           <p>
-            With a strong foundation in science, environmental engineering, educational services, and international school teaching, the consultancy offers a thoughtful blend of academic strategy, emotional encouragement, and cultural understanding.
+            With a strong foundation in educational services across different countries and with different groups of students, the consultancy offers a thoughtful blend of academic strategy, emotional encouragement, and cultural understanding.
           </p>
           <div className="check-list">
             {["Student-centered coaching", "Support for immigrant and internationally mobile families", "Partnership with schools and parents", "Confidence-building academic planning"].map((item) => (
@@ -291,9 +291,9 @@ function Contact() {
           <h2>Contact Details</h2>
 
           <div className="contact-details">
-            <p><Mail /> hello@bridgingdreamsconsulting.com</p>
-            <p><Phone /> +1 (555) 123-4567</p>
-            <p><MapPin /> Online & in-person consultations</p>
+            <p><Mail /> bridgingdreams@outlook.com</p>
+            <p><Phone /> +44 7964 031149</p>
+            <p><MapPin /> Online (in-person consultations also possible)</p>
           </div>
         </Card>
 
